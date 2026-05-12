@@ -104,15 +104,19 @@ a:hover {
     height: 30px;
 }
 
-.navbar-text {
+.navbar-links {
     padding: 0 5px;
-
+    display: inline-block;
 }
 
-.navbar-text:hover .link-git {
+.navbar-text{
+    width: fit-content;
+}
+
+.navbar-links:hover .link-git {
     background-image: url('./img/github_logo_no_bg.png');
 }
-.navbar-text:hover .link-gmail {
+.navbar-links:hover .link-gmail {
     background-image: url('./img/gmail-colored.png');
 }
 

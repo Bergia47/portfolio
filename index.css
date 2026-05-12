@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.google-sans-normal {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+}
+
+.roboto-slab-normal {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* VARIABILI*/
+
+:root {
+    --bs-primary: #090909;
+    --bs-primary-rgb: 9, 9, 9;
+
+    --bs-secondary: #282828;
+    --bs-secondary-rgb: 40, 40, 40;
+    --border-radius: 30px;
+
+    --color-hover: #5B8FA8;
+}
+
+/* COMPONENTI */
+.btn-bd-primary {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: var(--bs-light);
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-radius: var(--border-radius);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-light);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 95%, white);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 95%, white);
+    --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 95%, white);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 95%, white);
+    transition: 0.25s ease;
+}
+
+.btn-bd-primary:hover {
+    transform: scale(1.05);
+}
+
+/*********************/
+* {
+    font-family: Google Sans, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bs-secondary);
+}
+
+.page-top-gradient {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--bs-primary), var(--bs-secondary));
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapper {
+    flex-grow: 1;
+    max-width: 670px;
+    margin: 0px auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.col {
+    padding: 0px;
+}
+
+/* NAVBAR */
+a:hover {
+    text-decoration: underline;
+    color: var(--color-hover) !important;
+}
+
+.link-git {
+    background-image: url('./img/github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png');
+}
+
+.link-gmail {
+    background-image: url('./img/gmail-new.png');
+}
+
+.link-nav{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-text {
+    padding: 0 5px;
+
+}
+
+.navbar-text:hover .link-git {
+    background-image: url('./img/github_logo_no_bg.png');
+}
+.navbar-text:hover .link-gmail {
+    background-image: url('./img/gmail-colored.png');
+}
+
+#navigazione {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    /* color: var(--bs-light); */
+}
+
+#navigazione * {
+    font-family: Roboto Slab, Google Sans, sans-serif;
+
+}
+
+/* FOOTER */
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+
+footer *{
+    font-family: Roboto Slab, Google Sans, sans-serif;
+}
+
+/* PRESENTAZIONE */
+.header {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#presentazione h1 {
+    font-family: Roboto Slab, Google Sans, sans-serif;
+    font-size: 44pt;
+}
+
+#presentazione {
+    padding: 10px;
+    
+    z-index: 3;
+}
+
+#presentazione h5 {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: Roboto Slab, Google Sans, sans-serif;
+    /* color: #7f5af0; */
+}
+
+#presentazione {
+    width: fit-content;
+    margin: 30px auto;
+}
+
+#presentazione p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* CAROSELLO */
+.comp-wrappper {
+    max-width: 670px;
+    margin: 0px auto;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.carousel {
+    max-width: 750px;
+    width: 100%;
+}
+
+.carousel-inner {
+    min-height: 100px;
+    border-radius: 50px;
+    background-color: var(--color-hover);
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.carousel-inner .carousel-item {
+    padding: 0 100px;
+}
+
+.carousel-item>.row>.col {
+    display: flex;
+    justify-content: center;
+    /* Centra orizzontalmente */
+    align-items: center;
+}
+
+/* min button*/
+.min-button {
+    background-color: var(--bs-primary);
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 0px;
+}
+
+.min-quad-img-div {
+    border-radius: 5px;
+}
+
+.min-img-div {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+/* TITOLI*/
+.titolo {
+    font-family: Roboto Slab, Google Sans, sans-serif;
+    margin-bottom: 10px;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+/* BOTTONI*/
+.bottoni {
+    box-sizing: content-box;
+    width: 125px;
+    height: 125px;
+    padding: 1rem;
+}
+
+.btn-bd-primary:hover>.img-div {
+    opacity: 0.80;
+}
+
+.max-img-div {
+    width: 110px;
+    height: 110px;
+}
+
+.btn-bd-primary>.img-div {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.exagon-img-div {
+    width: 125px;
+    height: 125px;
+}
+
+.quad-img-div {
+    border-radius: 15px;
+}
+
+#c-logo {
+    background-image: url('./img/C_Logo.png');
+}
+
+#cs-logo {
+    background-image: url('./img/Csharp_Logo.png');
+}
+
+#js-logo {
+    background-image: url('./img/images.png');
+}
+
+#bs-logo {
+    background-image: url('./img/Bash_Logo_Colored.svg.png');
+}
+
+#html-logo {
+    background-image: url('./img/pngfind.com-html-5-logo-png-6834213.png');
+}
+
+#css-logo {
+    background-image: url('./img/CSS3_logo.svg.png');
+}
+
+#ard-logo {
+    background-image: url(./img/arduino-logo-vector-1.svg);
+}
+
+#tk-logo {
+    background-image: url(./img/logo-tinkercad-256.png);
+}
+
+#circ-logo {
+    background-image: url(./img/logic-gates-and-removebg-preview.png);
+}
+
+#vsc-logo {
+    background-image: url(./img/Visual_Studio_Code_1.35_icon.svg.png);
+}
+
+#vs2-logo {
+    background-image: url(./img/Visual_Studio_Icon_2022.svg.png);
+}
+
+#gth-logo {
+    background-image: url(./img/github-pages-logo-repository-fork-github-86eddab19cbc3ae293ada0fe0fb9e27d.png);
+}
+
+#git-logo {
+    background-image: url(./img/Git_icon.svg.png);
+
+}
+
+#icdl-logo {
+    background-image: url(./img/ECDL_Logo.png);
+}
+
+#camb-logo {
+    background-image: url(./img/logo1732783527943.png);
+}
+
+.btn-linguaggi>.row {
+    margin: 20px 0;
+}
+
+.btn-linguaggi>.row>.col {
+    padding: 0;
+}
+
+.btn-linguaggi {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* CARDS */
+
+.featured {
+    color: var(--bs-light);
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    height: var(--border-radius);
+    line-height: var(--border-radius);
+    padding: 0px;
+    font-weight: bold;
+}
+
+#cs-featured {
+    background-color: #822c98;
+}
+
+#c-featured {
+    background-color: #00589c;
+}
+
+#js-featured {
+    background-color: #f7df1e;
+    color: var(--bs-primary);
+}
+
+#bs-featured {
+    background-color: #49a31f;
+}
+
+#css-featured {
+    background-color: #214ce5;
+}
+
+#html-featured {
+    background-color: #e34f26;
+}
+
+#ard-featured {
+    background-color: #199aa0;
+}
+
+#tk-featured {
+    background-color: #ff7b39;
+}
+
+#circ-featured {
+    background-color: #c424fd;
+}
+
+#vsc-featured {
+    background-color: #0087d2;
+}
+
+#vs2-featured {
+    background-color: #a276da;
+}
+
+#gth-featured {
+    background-color: var(--bs-light);
+    color: var(--bs-primary);
+}
+
+#git-featured {
+    background-color: #f05030;
+}
+
+
+.paragrafo {
+    max-height: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: none;
+    transition: max-height 0.8s Ease-In-Out;
+}
+
+.paragrafo-aperto {
+    height: fit-content;
+    max-height: 500px;
+    box-sizing: content-box;
+    display: block;
+}
+
+.cornice {
+    margin: 20px auto;
+}
+
+/* CERTIFICAZIONI */
+
+.cert-img {
+    width: 100%;
+    height: 165px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.camb-img {
+    background-image: url(./img/e19a8fcaa56af4a7822e374b9ea9e554.png);
+    background-color: var(--bs-light);
+    box-sizing: border-box;
+    background-size: 105px;
+}
+
+.icdl-img {
+    background-image: url(./img/Logo_ICDL.svg.png);
+}
+
+.card {
+    border-radius: 20px;
+}
+
+/* HOME CARDS*/
+
+.h-card {
+    width: 210px;
+    margin-bottom: 15px !important;
+    margin: 0px auto;
+}
+
+.f1-img {
+    background-image: url(./img/ferrari-sf24-monaco.jpg);
+
+}
+
+.banda-img {
+    background-image: url(./img/hq720.jpg);
+}
+
+.conc-img {
+    background-image: url(./img/Eugenio-in-Via-Di-Gioia-in-concerto-date-info-biglietti-Summer-Tour-2025.jpg);
+}
+
+.h-card>div:nth-of-type(1) {
+    height: 165px;
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.h-card>div:nth-of-type(2) {
+    height: 0px;
+    overflow: hidden;
+    visibility: collapse;
+    padding: 0 5px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.h-card p {
+    margin: 0px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.h-card:hover>div:nth-of-type(1) {
+    height: 135px;
+}
+
+.h-card:hover>div:nth-of-type(2) {
+    height: 30px;
+    visibility: visible;
+}
+
+.h-card:hover p {
+    padding: 5px;
+}
+
+
+/* cambia pagina */
+.change-page button {
+    width: 200px;
+}
+
+
+/* 
+.change-page>a:nth-of-type(1)>button {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.change-page>a:nth-of-type(2)>button {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+} */
+
+.change-page button:hover {
+    transform: scale(1);
+    width: 210px;
+    color: var(--color-hover);
+}
+
+.change-page button:hover>i {
+    color: var(--color-hover);
+}
+
+
+.change-page {
+    display: flex;
+    /* sovrascrive inline-flex di Bootstrap */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 576px) {
+    .bottoni {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px !important;
+    }
+
+    .btn-bd-primary>.max-img-div {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .exagon-img-div {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media (max-width: 459px) {
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    .comp-wrappper {
+        display: none;
+    }
+
+    .tit-int {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 370px) {
+    #presentazione>h1{
+        font-size: 24pt;
+    }
+}
+
+

@@ -55,7 +55,7 @@
     font-family: Google Sans, sans-serif;
 }
 
-code{
+code {
     color: var(--color-hover);
 }
 
@@ -100,7 +100,7 @@ a:hover {
     background-image: url('./img/gmail-new.png');
 }
 
-.link-nav{
+.link-nav {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,13 +113,14 @@ a:hover {
     display: inline-block;
 }
 
-.navbar-text{
+.navbar-text {
     width: fit-content;
 }
 
 .navbar-links:hover .link-git {
     background-image: url('./img/github_logo_no_bg.png');
 }
+
 .navbar-links:hover .link-gmail {
     background-image: url('./img/gmail-colored.png');
 }
@@ -143,7 +144,7 @@ footer {
     width: 100%;
 }
 
-footer *{
+footer * {
     font-family: Roboto Slab, Google Sans, sans-serif;
 }
 
@@ -162,7 +163,7 @@ footer *{
 
 #presentazione {
     padding: 10px;
-    
+
     z-index: 3;
 }
 
@@ -595,10 +596,23 @@ footer *{
         text-align: center;
     }
 
+    .h-card>div:nth-of-type(1) {
+        height: 260px;
+    }
+
+    .h-card {
+        width: 315px;
+    }
+
+
+    .h-card:hover>div:nth-of-type(1) {
+        height: 230px;
+    }
+
 }
 
 @media (max-width: 370px) {
-    #presentazione>h1{
+    #presentazione>h1 {
         font-size: 24pt;
     }
 }

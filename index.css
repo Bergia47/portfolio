@@ -55,6 +55,10 @@
     font-family: Google Sans, sans-serif;
 }
 
+code{
+    color: var(--color-hover);
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -428,7 +432,7 @@ footer *{
 
 .paragrafo-aperto {
     height: fit-content;
-    max-height: 500px;
+    max-height: 1000px;
     box-sizing: content-box;
     display: block;
 }
